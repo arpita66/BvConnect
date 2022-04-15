@@ -19,13 +19,16 @@ function App() {
   return (
     <Router>  
       <Routes>
-        <Route exact path="/" element={user? <Home /> : <Register />}/>
+        <Route exact path="/" element={<Home />}/>
+        {/* user? <Home /> : <Register /> */}
 
-        <Route path="/login" element={user? <Link to="/" /> : <Login />} /> 
+        <Route path="login" element={ <Login />} /> 
+        {/* user? <Link to="/" /> : */}
           
-        <Route path="/register" element={user? <Link to="/" /> : <Register />}/>
+        <Route path="register" element={ <Register />}/>     
+        {/* user? <Link to="/" /> : */}
         
-        <Route path="/profile/:username" element={<Profile/>}/>
+        <Route path="profile/username" element={<Profile/>}/>
        
       </Routes>
     </Router>
