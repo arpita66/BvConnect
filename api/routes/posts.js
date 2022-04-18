@@ -80,7 +80,7 @@ router.post("/", async (req, res) => {
           return Post.find({ userId: friendId });
         })
       );
-      res.status(200).json(userPosts.concat(...friendPosts))
+      res.json(userPosts.concat(...friendPosts))
     } catch (err) {
       res.status(500).json(err);
     }

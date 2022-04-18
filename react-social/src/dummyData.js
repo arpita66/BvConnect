@@ -1,12 +1,12 @@
 export const Users = [
     {
       id:1,
-      profilePicture: "person/pic1.jpg",
+      profilePicture: "assets/person/pic1.jpg",
       username: "Divyanshi Tewari",
     },
     {
       id:2,
-      profilePicture: "person/pic2.jpg",
+      profilePicture: "assets/person/pic2.jpg",
       username: "Atulya Diksha",
     },
     
@@ -16,7 +16,7 @@ export const Users = [
     {
       id: 1,
       desc: "Love For All, Hatred For None.",
-      photo: "post/post1.jpeg",
+      photo: "assets/post/post1.jpeg",
       date: "5 mins ago",
       userId: 1,
       like: 32,
@@ -24,7 +24,7 @@ export const Users = [
     },
     {
       id: 2,
-      photo: "post/post2.jpeg",
+      photo: "assets/post/post2.jpeg",
       date: "15 mins ago",
       userId: 2,
       like: 2,

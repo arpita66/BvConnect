@@ -15,7 +15,8 @@ router.post("/register",async(req,res)=>{
                     username: req.body.username,
                     email: req.body.email,
                     password: hashedPassword,
-                    smart_id: req.body.smart_id
+                    smart_id: req.body.smart_id,
+                    contact: req.body.contact
                     // designation:req.body.designation,
                 }
             );
@@ -26,6 +27,7 @@ router.post("/register",async(req,res)=>{
              res.status(500).json(err)
        }
     });
+
     //login
     router.post("/login", async(req, res)=>{
         try {
@@ -40,4 +42,5 @@ router.post("/register",async(req,res)=>{
           res.status(500).json(err)
         }
         });
-module.exports = router;
+
+    module.exports = router;

@@ -9,6 +9,7 @@ export default function Register() {
   const password = useRef();
   const passwordAgain = useRef();
   const smart_id = useRef();
+  const contact = useRef();
   const history = useNavigate();
 
   const handleClick = async (e) => {
@@ -63,7 +64,7 @@ export default function Register() {
               type="password"
             />  */}
             <input type="text" required ref={smart_id} placeholder="SmartCardID" className="loginInput" />
-              <input type="text" placeholder="Contact Number" className="loginInput"/>
+              <input type="text" ref={contact} placeholder="Contact Number" className="loginInput"/>
                 {/* <div className="loginInput">
                 <label >
                   Register as
